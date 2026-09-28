@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: trocar pelo domínio final após o deploy na Vercel
+Sitemap: https://massasinsanas.vercel.app/sitemap.xml
