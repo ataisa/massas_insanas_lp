@@ -21,7 +21,7 @@ export const LINKS = {
 //    Clarity > Dashboard/Mapas de calor/Gravações = visitas + onde clicaram
 export function trackCta(canal, local = 'site') {
   try {
-    if (typeof window.gtag === 'function' && !String(window.location.href).includes('G-XXXXXXX')) {
+    if (typeof window.gtag === 'function') {
       window.gtag('event', 'cta_click', { canal, local });
     }
     if (typeof window.clarity === 'function') {
